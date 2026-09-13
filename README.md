@@ -1,8 +1,8 @@
 Smart Ticket Classifier:
-Un p'tit système de support que j'ai fait avec Spring Boot. Au lieu de classifier les tickets à la main, ça utilise une IA (Google Gemini) pour trouver automatiquement la catégorie, la priorité et un petit résumé dès qu'un ticket arrive.
+Un petit système de support que j'ai fait avec Spring Boot. Au lieu de classifier les tickets à la main, ça utilise une IA (Google Gemini) pour trouver automatiquement la catégorie, la priorité et un petit résumé dès qu'un ticket arrive.
 
-Pourquoi j'ai fait ça
-La plupart des sytèmes de tickets que j'ai vu te laissent juste tout taguer manuellement. Je voulais essayer de brancher un vrai modèle d'IA dans un vrai backend pour voir ce que ça donne — du genre : qu'est-ce qui se passe si l'appel IA est lent, qu'est-ce qui se passe si ça plante, et comment on laisse un humain corriger si l'IA se trompe. Ce projet c'est un peu ma façon de répondre à ça.
+Pourquoi j'ai créer ça
+La plupart des sytèmes de tickets que j'ai vu te laissent juste tout taguer manuellement. Je voulais essayer de brancher un vrai modèle d'IA dans un vrai backend pour voir ce que ça donne du genre : qu'est-ce qui se passe si l'appel IA est lent, qu'est-ce qui se passe si ça plante, et comment on laisse un humain corriger si l'IA se trompe. Ce projet c'est un peu ma façon de répondre à ça.
 
 Ce que ça fait
 Tu envoies un ticket (sujet, description, email)
