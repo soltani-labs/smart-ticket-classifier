@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 Smart Ticket Classifier
+#  Smart Ticket Classifier
 
 ### Un petit système de support avec Spring Boot + Google Gemini
 
@@ -19,15 +19,15 @@ Un petit système de support que j'ai fait avec **Spring Boot**.
 
 Au lieu de classifier les tickets à la main, ça utilise une **IA (Google Gemini)** pour trouver automatiquement :
 
-* 📂 la catégorie
-* ⚡ la priorité
-* 📝 un petit résumé
+*  la catégorie
+*  la priorité
+*  un petit résumé
 
 dès qu'un ticket arrive.
 
 ---
 
-## 💡 Pourquoi j'ai créé ça
+##  Pourquoi j'ai créé ça
 
 La plupart des systèmes de tickets que j'ai vu te laissent juste tout taguer manuellement.
 
@@ -41,7 +41,7 @@ Ce projet c'est un peu ma façon de répondre à ça.
 
 ---
 
-## 🔄 Ce que ça fait
+##  Ce que ça fait
 
 Tu envoies un ticket :
 
@@ -61,13 +61,13 @@ L'IA décide :
 
 |                  |                                               |
 | ---------------- | --------------------------------------------- |
-| 📂 **Catégorie** | `billing` / `technical` / `account` / `other` |
-| ⚡ **Priorité**   | `low` / `medium` / `high` / `urgent`          |
-| 📝 **Résumé**    | Un court résumé sur une ligne                 |
+|  **Catégorie** | `billing` / `technical` / `account` / `other` |
+|  **Priorité**   | `low` / `medium` / `high` / `urgent`          |
+|  **Résumé**    | Un court résumé sur une ligne                 |
 
 ---
 
-### 🚀 Traitement en arrière-plan
+###  Traitement en arrière-plan
 
 L'API n'attend pas après l'IA, elle répond tout de suite et **classifie le ticket en tâche de fond**.
 
@@ -94,7 +94,7 @@ L'API n'attend pas après l'IA, elle répond tout de suite et **classifie le tic
 
 ---
 
-### 🔎 Filtrer les tickets
+###  Filtrer les tickets
 
 Tu peux filtrer les tickets par :
 
@@ -106,7 +106,7 @@ status
 
 ---
 
-### 👤 Correction humaine
+###  Correction humaine
 
 Si l'IA se trompe, un agent du support peut modifier.
 
@@ -130,7 +130,7 @@ Et l'appli garde une trace de :
 
 ---
 
-### 📊 Statistiques
+###  Statistiques
 
 Y a un endpoint de stats simple qui montre à quelle fréquence l'IA avait raison.
 
@@ -173,17 +173,17 @@ au lieu d'être perdu.
 
 ---
 
-## 🛠️ Avec quoi c'est fait
+##  Avec quoi c'est fait
 
 | Technologie              | Utilisation                         |
 | ------------------------ | ----------------------------------- |
-| ☕ **Java 21**            | Backend                             |
-| 🌱 **Spring Boot**       | Framework                           |
-| 🌐 **Spring Web**        | API REST                            |
-| 🗄️ **Spring Data JPA**  | Accès aux données                   |
-| 🐘 **PostgreSQL**        | Base de données                     |
-| 🔁 **Spring Retry**      | Gestion des plantages des appels IA |
-| 🤖 **Google Gemini API** | Classification IA                   |
+|  **Java 21**            | Backend                             |
+|  **Spring Boot**       | Framework                           |
+|  **Spring Web**        | API REST                            |
+|  **Spring Data JPA**  | Accès aux données                   |
+|  **PostgreSQL**        | Base de données                     |
+|  **Spring Retry**      | Gestion des plantages des appels IA |
+|  **Google Gemini API** | Classification IA                   |
 
 Gemini est appelé directement en **REST**, pas avec un SDK.
 
@@ -239,7 +239,7 @@ llm:
 
 ---
 
-## 🌐 Endpoints
+##  Endpoints
 
 | Méthode | Endpoint                       | Description                          |
 | ------- | ------------------------------ | ------------------------------------ |
