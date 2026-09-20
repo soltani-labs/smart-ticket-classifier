@@ -35,7 +35,7 @@ public class TicketService {
         Ticket ticket = new Ticket(request.getSubject(), request.getDescription(), request.getCustomerEmail());
         ticket = ticketRepository.save(ticket);
 
-        // runs on a separate thread — request returns immediately with status OPEN
+        //////////////////// tâche séparée — retour immédiat (statut OPEN)
         classificationRunner.classify(ticket.getId());
 
         return TicketResponse.from(ticket);
