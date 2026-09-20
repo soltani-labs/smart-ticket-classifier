@@ -48,10 +48,10 @@ public class LlmClassificationService {
         return parseResponse(rawResponse);
     }
 
-    // called automatically once classify() has exhausted all retry attempts
+    //appelé automatiquement quand classify() a échoué partout
     @Recover
     public LlmClassificationResult recover(Exception ex, Ticket ticket) {
-        return null; // signals the caller: could not classify, fall back to UNCLASSIFIED
+        return null; // échec de classification, repli sur UNCLASSIFIED
     }
 
     private String buildPrompt(Ticket ticket) {
