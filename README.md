@@ -261,8 +261,4 @@ GET /tickets?status=OPEN
 
 <div align="center">
 
-### 🤖 Spring Boot × Google Gemini
-
-Petit projet perso pour expérimenter l'intégration d'une IA dans un backend Java.
-
 </div>
